@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  scroll-behavior: smooth; 
+}
+
 .example-card {
   width: 480px;
   min-height: 200px;
