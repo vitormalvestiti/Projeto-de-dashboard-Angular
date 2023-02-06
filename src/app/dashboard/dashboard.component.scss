@@ -50,3 +50,11 @@
   padding: 25px;
 }
 
+@media screen and (max-width: 992px) {
+  .status, .grafics{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
