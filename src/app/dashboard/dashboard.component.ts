@@ -69,15 +69,15 @@ export class DashboardComponent implements OnInit {
     var chart = new Chart('meuCanvas5', {
       type: 'pie',
       data: {
-        labels: ['2019', '2020', '2021'],
+        labels: ['2019', '2020', '2021', '2022'],
         datasets: [
         {
-          label: 'População do Brasil (milhão)',
-          data: [211, 213, 214],
+          data: [55, 87, 98, 105],
           backgroundColor: [
             'red',
             '#3f51b5',
             'yellow',
+            'green',
           ],
         },
       ]
