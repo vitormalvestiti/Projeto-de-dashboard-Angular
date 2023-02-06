@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
         labels: ['2019', '2020', '2021', '2022'],
         datasets: [
         {
-          label: 'Valor PIB (trilhão)',
+          label: 'Vendas em quantidade',
           data: [1873, 1449, 1609, 2544],
           borderColor: 'black',
           backgroundColor: '#3f51b5',
@@ -28,11 +28,11 @@ export class DashboardComponent implements OnInit {
     var chart = new Chart('meuCanvas2', {
       type: 'line',
       data: {
-        labels: ['2019', '2020', '2021'],
+        labels: ['2019', '2020', '2021', '2022'],
         datasets: [
         {
-          label: 'População do Brasil (milhão)',
-          data: [211, 213, 214],
+          label: 'Vendas em reais',
+          data: [8780, 9500, 9780, 10580],
           backgroundColor: '#f7c350',
         },
       ]
@@ -42,10 +42,11 @@ export class DashboardComponent implements OnInit {
     var chart = new Chart('meuCanvas3', {
       type: 'doughnut',
       data: {
-        labels: ['São Paulo', 'Rio de Janeiro',' Brasília','Outros'],
+        labels: ['venda', 'financeiro','tecnologia','Outros'],
         datasets: [
         {
-          data: [10, 4, 3, 83],
+          label: 'numero de funcionairos',
+          data: [10, 4, 8, 83],
           backgroundColor: [
             'red',
             '#3f51b5',
