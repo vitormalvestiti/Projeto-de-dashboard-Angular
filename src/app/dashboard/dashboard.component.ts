@@ -13,13 +13,13 @@ export class DashboardComponent implements OnInit {
     var chart = new Chart('meuCanvas1', {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['2019', '2020', '2021', '2022'],
         datasets: [
         {
-          label: 'Dataset 1',
-          data: [32, 25, 40],
-          borderColor: '#36A2EB',
-          backgroundColor: '#FF0657',
+          label: 'Valor PIB (trilhão)',
+          data: [1873, 1449, 1609, 2544],
+          borderColor: 'black',
+          backgroundColor: '#3f51b5',
         },
       ]
       },
@@ -28,13 +28,12 @@ export class DashboardComponent implements OnInit {
     var chart = new Chart('meuCanvas2', {
       type: 'line',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['2019', '2020', '2021'],
         datasets: [
         {
-          label: 'Dataset 1',
-          data: [32, 25, 40],
-          borderColor: '#36A2EB',
-          backgroundColor: '#FF0657',
+          label: 'População do Brasil (milhão)',
+          data: [211, 213, 214],
+          backgroundColor: '#f7c350',
         },
       ]
       },
@@ -43,17 +42,23 @@ export class DashboardComponent implements OnInit {
     var chart = new Chart('meuCanvas3', {
       type: 'doughnut',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['São Paulo', 'Rio de Janeiro',' Brasília','Outros'],
         datasets: [
         {
-          label: 'Dataset 1',
-          data: [32, 25, 40],
-          borderColor: '#36A2EB',
-          backgroundColor: '#FF0657',
+          data: [10, 4, 3, 83],
+          backgroundColor: [
+            'red',
+            '#3f51b5',
+            'yellow',
+            'green'
+          ],
         },
-      ]
-      },
+      ]},
     });
+
+
+
+    
   }
 
 }
